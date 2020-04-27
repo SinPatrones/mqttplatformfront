@@ -32,7 +32,7 @@ class DashboardComponent extends Component {
     }
 
     componentDidMount() {
-        this.socket = io('http://localhost:2999');
+        this.socket = io('http://34.95.151.168:2999/');
         this.socket.on('datogeneral', data => {
             this.setState({
                 listaDeDatos: [data, ...this.state.listaDeDatos],
